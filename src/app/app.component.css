@@ -1,0 +1,14 @@
+
+.body{
+ display: flex;
+ flex-direction: column;   
+ min-height: 100vh;
+}
+
+.color{
+    background-color: #033774;
+}
+
+.menu{
+    margin-top: auto
+}

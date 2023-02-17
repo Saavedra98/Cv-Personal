@@ -1,0 +1,159 @@
+.skills:not(:last-child){
+    margin-bottom: 15px;
+
+}
+
+.detalles{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0;
+}
+
+.menu{
+    position: relative;
+    border: 2px solid #033774;
+    border-radius: 20px;
+}
+
+.menu div{
+    position: relative;
+    width: 0;
+    height: 20px;
+    border-radius: 10px;
+    background-color: #033774;
+}
+
+/* animacion */
+
+#html-menu{
+    animation: html-barra 2s forwards;
+}
+
+@keyframes html-barra {
+
+    100%{
+        width: 90%;
+    }
+    
+}
+
+#css-menu{
+    animation: css-barra 2s forwards;
+}
+
+@keyframes css-barra {
+
+    100%{
+        width: 70%;
+    }
+    
+}
+
+#js-menu{
+    animation: js-barra 2s forwards;
+}
+
+@keyframes js-barra {
+
+    100%{
+        width: 70%;
+    }
+    
+}
+
+#ts-menu{
+    animation: ts-barra 2s forwards;
+}
+
+@keyframes ts-barra {
+
+    100%{
+        width: 70%;
+    }
+    
+}
+
+#ng-menu{
+    animation: ng-barra 2s forwards;
+}
+
+@keyframes ng-barra {
+
+    100%{
+        width: 80%;
+    }
+    
+}
+
+#bt-menu{
+    animation: bt-barra 2s forwards;
+}
+
+@keyframes bt-barra {
+
+    100%{
+        width: 70%;
+    }
+    
+}
+
+#tw-menu{
+    animation: tw-barra 2s forwards;
+}
+
+@keyframes tw-barra {
+
+    100%{
+        width: 60%;
+    }
+    
+}
+
+#sql-menu{
+    animation: sql-barra 2s forwards;
+}
+
+@keyframes sql-barra {
+
+    100%{
+        width: 75%;
+    }
+    
+}
+
+#ps-menu{
+    animation: ps-barra 2s forwards;
+}
+
+@keyframes ps-barra {
+
+    100%{
+        width: 60%;
+    }
+    
+}
+
+#exc-menu{
+    animation: exc-barra 2s forwards;
+}
+
+@keyframes exc-barra {
+
+    100%{
+        width: 90%;
+    }
+    
+}
+
+#pb-menu{
+    animation: pb-barra 2s forwards;
+}
+
+@keyframes pb-barra {
+
+    100%{
+        width: 65%;
+    }
+    
+}
