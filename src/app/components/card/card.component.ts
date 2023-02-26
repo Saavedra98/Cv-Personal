@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class CardComponent {
 
+
+  aficiones = ['Futbol', 'Tecnologia', 'Música', 'Leer'];
+  
+  habilidadesPersonales = ['Respetuoso', 'Puntual', 'Constante', 'Adaptable'];
+
+
+
 }

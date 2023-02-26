@@ -4,85 +4,23 @@
 
         <h1 class="font-mono text-3xl uppercase font-bold text-blue-900">Proyectos </h1>
 
-        <div class="proyectos mt-2 ml-5 grid grid-cols-2 gap-5 ">
+        <div class="proyectos mt-2 ml-5 grid grid-cols-2 gap-5 " >
 
-            <div class="proyecto border-2 border-blue-900  rounded ">
-                <h1 class="font-mono uppercase text-center text-blue-900 text-xl font-bold">Crud-Persona</h1>
-                <img src="./assets/img/PROYECTOS/p-1.png" width="100%" class="mb-5 mx-auto rounded-lg ">
-                <div class="linea border border-blue-900 mx-5 "></div>
-
-                <div class="botones grid grid-cols-2 gap-2 mx-1">
-                    <button class="rounded-lg px-3 py-1 bg-blue-700 hover:bg-blue-900 my-2   text-white  "><a href="https://saavedra98.github.io/Angular-Actividad-15/" target="_blank"> Ver proyecto</a></button>
-                    <button class="rounded-lg px-3 py-1 bg-blue-700 hover:bg-blue-900 my-2   text-white  "><a href="https://github.com/Saavedra98/Angular-Actividad-15.git" target="_blank"> Ver Portafolio</a></button>
+            <div  *ngFor="let proyecto of proyectos">
+                <div class="card">
+                    <img class="imagen" src="{{proyecto[0]}}" alt="">
+                     <div class="content">
+                        <h1 class="font-mono uppercase text-center text-blue-900 titulo text-xl font-bold">{{proyecto[1]}}</h1>
+                        <div class="botones grid grid-cols-2 gap-2 mx-1">
+                            <button class="rounded-lg px-3 py-1 bg-blue-700 hover:bg-blue-900 my-2   text-white  "><a href="{{proyecto[2]}}" target="_blank"> Ver proyecto</a></button>
+                            <button class="rounded-lg px-3 py-1 bg-blue-700 hover:bg-blue-900 my-2   text-white  "><a href="{{proyecto[3]}}" target="_blank"> Ver Portafolio</a></button>
+                        </div>  
+                    </div>
                 </div>
-
-                
-            </div>
-            
-            <div class="proyecto border-2 border-blue-900  rounded ">
-                <h1 class="font-mono uppercase text-center text-blue-900 text-xl font-bold">Rutas</h1>
-                <img src="./assets/img/PROYECTOS/p-2.png" width="100%" class="mb-5 mx-auto rounded-lg ">
-                <div class="linea border border-blue-900 mx-5 "></div>
-
-                <div class="botones grid grid-cols-2 gap-2 mx-1">
-                    <button class="rounded-lg px-3 py-1 bg-blue-700 hover:bg-blue-900 my-2   text-white  "><a href="https://saavedra98.github.io/Angular-Session-17/" target="_blank"> Ver proyecto</a></button>
-                    <button class="rounded-lg px-3 py-1 bg-blue-700 hover:bg-blue-900 my-2   text-white  "><a href="https://github.com/Saavedra98/Angular-Session-17" target="_blank"> Ver Portafolio</a></button>
-                </div>
-
-            </div>
-            
-            <div class="proyecto border-2 border-blue-900  rounded ">
-                <h1 class="font-mono uppercase text-center text-blue-900 text-xl font-bold">Crud-Productos</h1>
-                <img src="./assets/img/PROYECTOS/p-3.png" width="100%" class="mb-5 mx-auto rounded-lg ">
-                <div class="linea border border-blue-900 mx-5 "></div>
-                
-                <div class="botones grid grid-cols-2 gap-2 mx-1">
-                    <button class="rounded-lg px-3 py-1 bg-blue-700 hover:bg-blue-900 my-2   text-white  "><a href="https://saavedra98.github.io/Angular-Actividad-17/" target="_blank"> Ver proyecto</a></button>
-                    <button class="rounded-lg px-3 py-1 bg-blue-700 hover:bg-blue-900 my-2   text-white  "><a href="https://github.com/Saavedra98/Angular-Actividad-17.git" target="_blank"> Ver Portafolio</a></button>
-                </div>
-                
-            </div>
-            
-            <div class="proyecto border-2 border-blue-900  rounded ">
-                <h1 class="font-mono uppercase text-center text-blue-900 text-xl font-bold">Pokemones - Api</h1>
-                <img src="./assets/img/PROYECTOS/p-4.png" width="100%" class="mb-5 mx-auto rounded-lg ">
-                <div class="linea border border-blue-900 mx-5 "></div>
-                <div class="botones grid grid-cols-2 gap-2 mx-1">
-                    <button class="rounded-lg px-3 py-1 bg-blue-700 hover:bg-blue-900 my-2   text-white  "><a href="https://saavedra98.github.io/Angular-Session-19/" target="_blank"> Ver proyecto</a></button>
-                    <button class="rounded-lg px-3 py-1 bg-blue-700 hover:bg-blue-900 my-2   text-white  "><a href="https://github.com/Saavedra98/Angular-Session-19.git" target="_blank"> Ver Portafolio</a></button>
-                </div>
-                
-            </div>
-            
-            <div class="proyecto border-2 border-blue-900  rounded ">
-                <h1 class="font-mono uppercase text-center text-blue-900 text-xl font-bold">Crud-Usuarios-Firebase</h1>
-                <img src="./assets/img/PROYECTOS/p-5.png" width="100%" class="mb-5 mx-auto rounded-lg ">
-                <div class="linea border border-blue-900 mx-5 "></div>
-                <div class="botones grid grid-cols-2 gap-2 mx-1">
-                    <button class="rounded-lg px-3 py-1 bg-blue-700 hover:bg-blue-900 my-2   text-white  "><a href="https://angular-30-cb9e2.web.app/" target="_blank"> Ver proyecto</a></button>
-                    <button class="rounded-lg px-3 py-1 bg-blue-700 hover:bg-blue-900 my-2   text-white  "><a href="https://github.com/Saavedra98/Angular-Session-30.git" target="_blank"> Ver Portafolio</a></button>
-                </div>
-                
-            </div>
-            
-            <div class="proyecto border-2 border-blue-900  rounded ">
-                <h1 class="font-mono uppercase text-center text-blue-900 text-xl font-bold">Ecommerce Productos </h1>
-                <img src="./assets/img/PROYECTOS/p-6.png" width="100%" class="mb-5 mx-auto rounded-lg ">
-                <div class="linea border border-blue-900 mx-5 "></div>
-                <div class="botones grid grid-cols-2 gap-2 mx-1">
-                    <button class="rounded-lg px-3 py-1 bg-blue-700 hover:bg-blue-900 my-2   text-white  ">
-                        <a href="https://trabajofinalsaavedraerazo.web.app/" target="_blank"> Ver proyecto</a>
-                    </button>
-                    <button class="rounded-lg px-3 py-1 bg-blue-700 hover:bg-blue-900 my-2   text-white  "><a href="https://github.com/Saavedra98/Angular-TrabajoFinal.git" target="_blank"> Ver Portafolio</a></button>
-                </div>
-                
             </div>
         </div>
-        <div class="linea border border-black mt-2"></div>
+        <div class="linea border border-black mt-2"></div>        
+ 
     </div>
-
-
-
-
 
 </div>

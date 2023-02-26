@@ -4,23 +4,12 @@
 
         <h1 class="font-mono text-3xl uppercase font-bold text-blue-900">Educación</h1>
 
-        <div class="seccion mt-2 ml-5">
-            <h1 class="font-mono text-2xl font-bold text-blue-900">Universidad Nacional de Piura</h1>
-            <p class="font-mono text-xl ">[2016 - 2022]</p>
-            <p class="font-mono text-xl ">Bachiller de Ingeniería Informática, perteneciente al tercio superior de la
-                facultad</p>
-        </div>
-
-        <div class="seccion mt-2 ml-5">
-            <h1 class="font-mono text-2xl font-bold text-blue-900">Instituto de Idioma (UNP) </h1>
-            <p class="font-mono text-xl ">[2021 - 2021]</p>
-            <p class="font-mono text-xl ">Ingles Básico, Ingles Pre-Intermedio</p>
-        </div>
-
-        <div class="seccion mt-2 ml-5">
-            <h1 class="font-mono text-2xl font-bold text-blue-900"> Jorge Basadre Grohmann</h1>
-            <p class="font-mono text-xl ">[2005 - 2015]</p>
-            <p class="font-mono text-xl ">Primaria, Secundaria</p>
+        <div *ngFor="let edu of educacion">
+            <div class="seccion mt-2 ml-5">
+                <h1 class="font-mono text-2xl font-bold text-blue-900">{{edu[0]}}</h1>
+                <p class="font-mono text-xl ">{{edu[1]}}</p>
+                <p class="font-mono text-xl ">{{edu[2]}}</p>
+            </div>
         </div>
 
         <div class="linea border border-black mt-2"></div>
@@ -36,14 +25,9 @@
             <p class="font-mono text-xl ">[Marzo 2022 - Septiembre 2022]</p>
             <p class="font-mono text-xl "> Practicante del área de informática: </p>
 
-            <ul class="list-disc ">
-                <li class="font-mono text-lg mx-11"> Encargado de la base de datos de la empresa y el área de gerencia de Prodef</li>
-                <li class="font-mono text-lg mx-11">Restauración de las bases de datos de la empresa.</li>
-                <li class="font-mono text-lg mx-11"> Instalación y actualizaciones de Software y Hardware.</li>
-                <li class="font-mono text-lg mx-11"> Generar reportes mediante consultas SQL server que requiere las empresas.</li>
-                <li class="font-mono text-lg mx-11"> Generar dashboard para la mejora de toma de decisiones, ayudando a la empresa a seguir creciendo</li>
+            <ul class="list-disc" *ngFor="let tarea of tareas">
+                <li class="font-mono text-lg mx-11">{{tarea}}</li>
             </ul>
-
         </div>
 
     </div>
