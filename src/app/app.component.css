@@ -1,8 +1,21 @@
 
+
+
 .body{
  display: flex;
  flex-direction: column;   
  min-height: 100vh;
+    
+
+}
+
+.derecha{
+    background: white;
+}
+
+.container{
+    box-shadow: 0px 0px 10px 1px gray;
+    background-color: white;
 }
 
 .color{
@@ -12,3 +25,7 @@
 .menu{
     margin-top: auto
 }
+
+/* .card-col{
+    box-shadow: 0px 0px 5px 1px #033774;
+} */
